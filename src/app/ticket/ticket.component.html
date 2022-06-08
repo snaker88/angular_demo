@@ -1,0 +1,12 @@
+<h2>List of Tickets</h2>
+
+<ul>
+    <li *ngFor="let ticket of ticket">
+        <b>{{ticket.title}}</b> <button class="button_del" (click)="deleteTicket(ticket.id)">Delete</button></li>
+    <li>
+        <form [formGroup]="form" (ngSubmit)="addTicket()" action="">
+            <input placeholder="Title ticket" type="text" formControlName="title">
+            <button class="button_add" type="submit">Add</button>
+        </form>
+    </li>
+</ul>

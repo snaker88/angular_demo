@@ -1,0 +1,8 @@
+.logout {
+    font-size: 12px;
+    color: #828a91;
+}
+
+.logout::before {
+    content: '\2190';
+}

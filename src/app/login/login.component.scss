@@ -1,0 +1,16 @@
+form {
+    display: inline-grid;
+}
+
+.profile {
+    display: flex;
+    justify-content: space-between;
+}
+
+input,
+button {
+    width: 100%;
+    padding: 8px 20px;
+    margin: 5px 0;
+    box-sizing: border-box;
+}

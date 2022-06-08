@@ -1,0 +1,142 @@
+form {
+    display: inline-grid;
+}
+
+.profile {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    border: 1px solid #e7eef4;
+    padding: 1.2rem 2rem 0.5rem;
+    margin-bottom: .5rem;
+}
+
+.profile__change {
+    margin: 10px 0;
+}
+
+input {
+    width: 100%;
+    padding: 8px 20px;
+    margin: 5px 0;
+    box-sizing: border-box;
+    background: #e7eef4c9;
+    border-radius: 5px;
+    border: none;
+}
+
+button {
+    width: 100%;
+    padding: 8px 20px;
+    margin: 5px 0;
+    box-sizing: border-box;
+    background: #f87979;
+    border: none;
+    color: white;
+    border-radius: 5px;
+}
+
+button:hover {
+    background: #cd3e3e;
+}
+
+.button_add {
+    background: #9ce879;
+}
+
+.button_add:hover {
+    background: #55b627;
+}
+
+.logout {
+    font-size: 12px;
+    color: #828a91;
+    width: 100%;
+    margin: 15px 0;
+}
+
+.logout::before {
+    content: '\2190';
+}
+
+ul {
+    padding: 0;
+    margin: 0;
+    list-style-type: none;
+    h3,
+    h5,
+    h4,
+    p {
+        margin: 0 0 .9rem;
+    }
+    span {
+        font-size: 13px;
+        color: #828a91;
+    }
+    .citys {
+        display: flex;
+        flex-wrap: wrap;
+        span {
+            width: 100%;
+        }
+        h5 {
+            margin: 0 5px 0 0;
+        }
+    }
+}
+
+.city__form {
+    width: 100%;
+    flex-wrap: wrap;
+    display: flex;
+    input {
+        border-top-right-radius: 0;
+        border-bottom-right-radius: 0
+    }
+    button {
+        border-top-left-radius: 0;
+        border-bottom-left-radius: 0
+    }
+    input,
+    button {
+        width: auto;
+    }
+    @media screen and (max-width:460px) {
+        input,
+        button {
+            border-top-left-radius: 5px;
+            border-bottom-left-radius: 5px;
+            border-top-right-radius: 5px;
+            border-bottom-right-radius: 5px;
+            width: 100%;
+        }
+    }
+}
+
+.profile__data {
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 1.5rem;
+}
+
+.inform__title {
+    width: 100%;
+}
+
+@media screen and (min-width:160px) {
+    .profile__change {
+        min-width: 100%;
+        form {
+            min-width: 100%;
+        }
+    }
+}
+
+@media screen and (min-width:460px) {
+    .profile__change {
+        min-width: 265px;
+        form {
+            min-width: 265px;
+        }
+    }
+}
